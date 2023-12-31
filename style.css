@@ -1,0 +1,113 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.modal-grid{
+    max-width: 1130px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+header{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding:10px;
+    background-color: #fff;
+}
+.project-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+.modal-main{
+    height: 90vh;
+    background-image: url("./img/hero.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.banner{
+    background-color: #fff;
+    padding: 4rem 0rem;
+    border-radius: 8px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 150px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.banner-heading{
+    font-size: 4rem;
+    font-weight: 600;
+    color: #102a42;
+}
+.modal-open-btn{
+    background-color: #49a6e9;
+    color: #fff;
+    transition: all 0.3s linear;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    font-size: 18px;
+    padding: 0.375rem 0.75rem;
+    text-transform: uppercase;
+    margin-top: 30px;
+    border:2px solid #49a6e9;
+}
+.modal-open-btn:hover{
+    background-color: transparent;
+    color: #49a6e9;
+}
+.modal-container{
+    background-color: #fff;
+    border-radius: 8px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 150px;
+    padding: 1rem;
+    height: 30vh;
+    position: relative;
+}
+.modal-container-heading{
+    font-size: 30px;
+    font-weight: 600;
+    color: #102a42;
+}
+.modal-close-btn{
+    background-color: transparent;
+    font-size: 30px;
+    top: 1rem;
+    right: 1rem;
+    border:unset;
+    color: #bb2525;
+    transition: all 0.3s linear;
+    position: absolute;
+}
+.show-modal{
+    display: none;
+}
+.hide{
+    display: none;
+}
+.modal-close-btn:hover{
+    transform: rotate(360deg);
+}
+
+
+
+
+@media (max-width: 991px) {
+    .banner{
+        width: 100%;
+    }
+    .modal-container{
+        width: 100%;
+    }
+}
